@@ -53,10 +53,14 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: ["src/**/*.java", "src/**/*.kt","Mantle/src/**/*.java",],
+
+    aaptflags: ["--extra-packages com.lessaosp.settings"],
+
     resource_dirs: [
         "res",
-        "TouchGestures/res"
+        "TouchGestures/res",
+        "Mantle/res"
     ],
 
     static_libs: [
@@ -102,6 +106,10 @@ android_library {
         "telephony-common",
         "ims-common",
     ],
+
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 platform_compat_config {

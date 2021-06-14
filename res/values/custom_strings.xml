@@ -53,5 +53,9 @@
 
     <!-- Density category -->
     <string name="density_category">Density options</string>
+    
+    <!-- Mantle -->
+    <string name="lessaosp_dashboard_title">Mantle</string>
+    <string name="lessaosp_dashboard_summary">Cloak your device with features</string>
 
 </resources>
