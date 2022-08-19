@@ -79,6 +79,14 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LessAOSPBuildDatePreferenceController"/>
 
+    <!-- Build maintainer -->
+    <Preference
+        android:key="os_build_maintainer"
+        android:title="Build maintainer"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.LessAOSPBuildMaintainerPreferenceController"/>
+
     <!-- Build number -->
     <Preference
         android:key="os_build_number"
